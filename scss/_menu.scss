@@ -52,73 +52,88 @@ visibility:hidden;
 }
 
 &-branding, &-nav {
-      display:flex;
-      flex-flow:column wrap;
-      align-items: center;
-      justify-content: center;
-      width:50%;
-      height:100vh;
-      overflow: hidden;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float:left;
+    width: 50%;
+    height: 135vh;
+    overflow: hidden;
 }
 
 &-nav {
     margin: 0;
     padding:0;
-    background: darken($primary-color,5);
+    background: darken($primary-color, 5);
     list-style: none;
-    transform: translate3d(0, -100%, 0);
+    transform:translate3d(0, -100%, 0);
     @include easeOut;
 
-
     &.show {
-        transform: translate(0, 0, 0);
+        //slide in from top
+        transform: translate3d(0, 0, 0);
     }
 }
 
-//branding side
+
+
+//branding side  
 
 &-branding {
-    background: $primary-color;
+    background:  $primary-color;
     transform: translate3d(0, 100%, 0);
     @include easeOut;
 
+
     &.show {
-        //slide from bottom
-        transform: translate3d(1, 0, 0);
+
+        //slide in from bottom
+        transform: translate3d(0, 0, 0);
     }
+
+
+                //Circle images sizes her ....
+
 
     .portrait {
         width: 250px;
         height: 250px;
-        background: url('../dist/img/portrait.jpg');
+        background: url(../dist/img/portrait.jpg);
         border-radius: 50%;
-        border:solid 3px $secondary-color;
+        border: solid 3px $secondary-color;
     }
 }
 
-.nav-item {
-
+.nav-item{
     transform: translate3d(600px, 0, 0);
     @include easeOut;
 
-    &.show{
-              //slide in from right
+       &.show {
+                // slide in from right
+
         transform: translate3d(0, 0, 0);
     }
 
     &.current > a {
-        color: $secondary-color;
+
+        color:$secondary-color;
     }
-}
+}                 
+
+                 // side bar ka size hai yaha ....
+
 
 .nav-link {
+
     display:inline-block;
-    position:relative;
+    position: relative;
     font-size: 30px;
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color:#fff;
     text-decoration: none;
     @include easeOut;
 
@@ -126,13 +141,20 @@ visibility:hidden;
         color: $secondary-color;
     }
 }
+
+
 }
 
 
-//delay each nav items slide by 0.1s
+//Delay each nav item slide by 0.1s
+
+
+
 
 @for $x from 1 through 4 {
+
     .nav-item:nth-child(#{$x}) {
+
         transition-delay: $x * 0.1s;
     }
 }
