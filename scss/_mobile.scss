@@ -2,14 +2,106 @@
 
 @include mediaXl {
 
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .lg-heading {
+        line-height: 1;
+        text-align: center;
+    }
+
+    .sm-heading {
+        line-height:2;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
 }
 
 // desktops and laptops 
 
 
 @include mediaLg {
+
+    .projects{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .lg-heading {
+        line-height: 1;
+        text-align: center;
+    }
+
+
+    .contact-right form {
+
+        width: 80%;
+        margin-left: 1rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 2rem;
+  margin: 1rem 0;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 9px;
+  margin-left: 25px;
+  
+  
+}
+
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 15px;
+    margin-top: 14px;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: #6eabab;
+    background: #e00312;
+    border-radius: 1rem;
     
 }
+
+#msg {
+    color: #238a93;
+    margin-top: -20px;
+    display: block;
+    margin-left: 270px;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 2rem;
+  }
+
+  .sm-heading {
+
+    margin-top: 1rem;
+    text-align: center;
+      }
+
+      .icons {
+        margin-top: 0.4rem;
+        padding: 0.4rem;
+        font-size: 1.9rem;
+        will-change: transform;
+        transition: transform 450ms;
+        text-align: center;
+        &:hover {
+          color: #1760cf;
+          transition: transform 125ms;
+        transform: translateY(-10px);
+      }
+    }
+}
+
+      
 
 
 //tablets and small laptops
@@ -66,6 +158,59 @@
 
         grid-template-columns: 1fr;
     }
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .contact-right form {
+
+        width: 80%;
+        margin-left: 1rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 2rem;
+  margin: 1rem 0;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 9px;
+  margin-left: 25px;
+  
+  
+}
+
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 15px;
+    margin-top: 14px;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: #6eabab;
+    background: #e00312;
+    border-radius: 1rem;
+    
+}
+
+#msg {
+    color: #238a93;
+    margin-top: -20px;
+    display: block;
+    margin-left: 270px;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 2rem;
+  }
+
+
+
 }
 
 //smartphones
@@ -76,6 +221,57 @@
 
         margin-top: 10vh;
     }
+
+    .projects{
+        grid-template-columns: 1fr;
+    }
+
+
+    .contact-right form {
+
+        width: 80%;
+        margin-left: 1rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  padding: 2rem;
+  margin: 1rem 0;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 9px;
+  margin-left: 25px;
+  
+  
 }
 
+form .btn2 {
+    padding: 14px 60px;
+    font-size: 15px;
+    margin-top: 14px;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: #6eabab;
+    background: #e00312;
+    border-radius: 1rem;
+    
+}
+
+#msg {
+    color: #238a93;
+    margin-top: -20px;
+    display: block;
+    margin-left: 270px;
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 2rem;
+  }
+
+}
 

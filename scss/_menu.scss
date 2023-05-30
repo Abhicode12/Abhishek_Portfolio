@@ -59,7 +59,7 @@ visibility:hidden;
     justify-content: center;
     float:left;
     width: 50%;
-    height: 135vh;
+    height: 113vh;
     overflow: hidden;
 }
 
@@ -98,10 +98,10 @@ visibility:hidden;
 
 
     .portrait {
-        width: 250px;
-        height: 250px;
-        background: url(../dist/img/portrait.jpg);
-        border-radius: 50%;
+        width: 230px;
+        height: 230px;
+        background : url(../dist/img/Boy.jpg);
+        border-radius: 60%;
         border: solid 3px $secondary-color;
     }
 }
